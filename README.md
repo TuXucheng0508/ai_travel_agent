@@ -2,7 +2,7 @@
 
 > **一个 Tool-augmented LLM Agent 应用**：用户输入出发地 / 目的地 / 行程日期，Agent 自动调用外部工具获取**真实机票与酒店数据**，再结合大模型生成**结构化、可执行的旅行攻略**，并输出可一键跳转的预订链接。
 
-本项目不是简单的"提示词套壳"，而是一个具备**工具调用（Tool Calling）、多步编排（Orchestration）、真实数据注入与成本控制**的完整 AI Agent 工程实践，技术栈覆盖 **MCP 协议、LLM API 编排、Streamlit 前端与异步 RPC**。
+本项目是一个具备**工具调用（Tool Calling）、多步编排（Orchestration）、真实数据注入与成本控制**的完整 AI Agent 工程实践，技术栈覆盖 **MCP 协议、LLM API 编排、Streamlit 前端与异步 RPC**。
 
 ---
 
@@ -159,4 +159,12 @@ ai_travel_agent/   (仓库根)
 
 ---
 
-> 本项目展示了 **AI Agent 开发的关键能力**：工具调用协议化（MCP）、真实数据驱动的生成（抗幻觉）、Prompt 工程与结构化输出、以及面向生产的工程化落地。适合作为 LLM / Agent 应用方向的工程实践样例。
+输入框
+<img width="2864" height="1536" alt="d008ca741da5284197f8a7dd9c675e18" src="https://github.com/user-attachments/assets/31862e1f-f69f-4630-bdd5-a33a08e35377" />
+输出攻略
+<img width="2864" height="1536" alt="183ff2f0355667ce3598de90a08b118c" src="https://github.com/user-attachments/assets/5d09f6fb-a741-4572-a6a5-2974a6db9f01" />
+输出酒店跳转链接
+<img width="2864" height="1536" alt="72fc129ea220c9b19815fdc1518fb824" src="https://github.com/user-attachments/assets/1f0f91e1-3745-44e0-90b4-20d00d702a0e" />
+
+
+
