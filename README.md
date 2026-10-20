@@ -117,18 +117,21 @@ streamlit run app.py
 ## 📁 目录结构
 
 ```
-ai_travel_agent/
+ai_travel_agent/   (仓库根)
 ├── app.py                 # Streamlit 前端：输入 → 展示机票/酒店/攻略 + 可点击链接
 ├── mcp_client.py          # MCP 客户端：stdio 拉起 server 子进程，单会话多工具调用
 ├── txc_agent.py           # 编排层：真实数据 + 豆包生成攻略（含杭州本地缓存）
 ├── requirements.txt       # 依赖（含后端 server 所需的 fastmcp）
-├── .env.example           # 环境变量模板
-└── README.md
+├── server/                # 后端 MCP 工具服务器（SearchAPI.io 封装）
+│   ├── client.py          # HTTP 客户端（连接池 / 重试 / 缓存 / 熔断器）
+│   ├── config.py          # Pydantic 配置
+│   └── mcp_server_refactored.py # FastMCP 服务器：机票/酒店/链接工具
+├── LICENSE               
+├── README.md             
+├── .gitignore            
+├── .env.example          
+└── google_open_api.yaml
 
-server/                    # 后端 MCP 工具服务器（SearchAPI.io 封装）
-├── mcp_server_refactored.py  # FastMCP 服务器：机票/酒店/链接工具
-├── config.py              # Pydantic 配置
-└── client.py              # HTTP 客户端（连接池 / 重试 / 缓存 / 熔断器）
 ```
 
 ---
