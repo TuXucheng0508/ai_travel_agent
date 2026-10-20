@@ -1,0 +1,41 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ============ 虚拟环境 ============
+venv/
+env/
+ENV/
+
+# ============ IDE / 编辑器 ============
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============ 操作系统 ============
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+# ============ 密钥（保留 .env.example 模板） ============
+.env
+*.env
+
+# ============ 日志 ============
+*.log
+
+# ============ 本地/个人缓存（路径硬编码，不随仓库分发） ============
+缓存.md
+
+# ============ 不属于本仓库（AI 旅行管家）的其它实现/测试 ============
+/requirements.txt
+/mcp_server.py
+/tests/
+/comprehensive_test.py
+/test_*.py
+/google_open_api.yaml
+/REFACTOR_NOTES.md
+/.env.example
